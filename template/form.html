@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+    <h2 style="text-align: center;">Register Form</h2>
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="name">Name</label>
+        <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="no">Mobile No.</label>
+        <input type="text" class="form-control form-control-lg" id="no" placeholder="Enter your Mobile no." name="no">
+      </div>
+      <div class="mb-3">
+        <label for="fname">Password</label>
+        <input type="password" class="form-control form-control-lg" id="pswd" placeholder="Enter Password" name="pswd">
+      </div>
+      <div class="mb-3">
+        <label for="gender" class="form-label">Gender</label><select class="form-select" id="gender" name="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn ml-200 btn-primary" >Submit</button>
+    </form>
+  </div>
+  
+
+{% endblock %}
